@@ -9,7 +9,7 @@ export const Grid = styled.div`
   display: grid;
 
   grid-template-columns: 124px auto;
-  grid-template-rows: 106px 649px 249px;
+  grid-template-rows: 70px 705px 249px;
 
   grid-template-areas:
     'SIDEBAR NAVBAR'
