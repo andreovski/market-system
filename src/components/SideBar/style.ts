@@ -1,7 +1,18 @@
 import styled from 'styled-components';
 
+import {
+  Home,
+  StatsChart,
+  Time,
+  Settings,
+  LogOut,
+} from '@styled-icons/ionicons-outline';
+
 export const Container = styled.div`
   grid-area: SIDEBAR;
+
+  height: 100vh;
+  position: fixed;
 
   background-color: var(--primary);
 
@@ -16,14 +27,34 @@ export const UserProfile = styled.div`
   border-radius: 6px;
 `;
 
-export const Menu = styled.div``;
+export const Menu = styled.div`
+  display: flex;
 
-export const Home = styled.div``;
+  flex-direction: column;
 
-export const Analitico = styled.div``;
+  margin-top: 63px;
+  align-items: center;
 
-export const Historico = styled.div``;
+  > svg {
+    width: 45px;
+    height: 45px;
 
-export const Configuracoes = styled.div``;
+    margin-bottom: 4vh;
 
-export const Logout = styled.div``;
+    color: var(--elem_white);
+  }
+`;
+
+export const HomeIcon = styled(Home)``;
+
+export const AnaliticoIcon = styled(StatsChart)``;
+
+export const HistoricoIcon = styled(Time)``;
+
+export const ConfiguracoesIcon = styled(Settings)``;
+
+export const LogoutIcon = styled(LogOut)`
+  position: absolute;
+
+  bottom: 0px;
+`;

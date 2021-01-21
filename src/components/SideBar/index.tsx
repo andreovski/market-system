@@ -4,11 +4,11 @@ import {
   Container,
   UserProfile,
   Menu,
-  Home,
-  Analitico,
-  Historico,
-  Configuracoes,
-  Logout,
+  HomeIcon,
+  AnaliticoIcon,
+  HistoricoIcon,
+  ConfiguracoesIcon,
+  LogoutIcon,
 } from './style';
 
 const SideBar: React.FC = () => (
@@ -16,12 +16,12 @@ const SideBar: React.FC = () => (
     <UserProfile />
 
     <Menu>
-      <Home />
-      <Analitico />
-      <Historico />
-      <Configuracoes />
+      <HomeIcon />
+      <AnaliticoIcon />
+      <HistoricoIcon />
+      <ConfiguracoesIcon />
 
-      <Logout />
+      <LogoutIcon />
     </Menu>
   </Container>
 );
