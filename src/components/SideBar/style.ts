@@ -1,12 +1,7 @@
 import styled from 'styled-components';
 
-import {
-  Home,
-  StatsChart,
-  Time,
-  Settings,
-  LogOut,
-} from '@styled-icons/ionicons-outline';
+import * as IconOutline from '@styled-icons/ionicons-outline';
+import * as IconSolid from '@styled-icons/ionicons-sharp';
 
 export const Container = styled.div`
   grid-area: SIDEBAR;
@@ -16,7 +11,7 @@ export const Container = styled.div`
 
   background-color: var(--primary);
 
-  padding: 30px 30px;
+  padding: 26px 26px;
 `;
 
 export const UserProfile = styled.div`
@@ -35,26 +30,48 @@ export const Menu = styled.div`
   margin-top: 63px;
   align-items: center;
 
-  > svg {
-    width: 45px;
-    height: 45px;
+  > div {
+    display: flex;
 
-    margin-bottom: 4vh;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border-radius: 6px;
 
-    color: var(--elem_white);
+    place-content: center;
+
+    margin-bottom: 2.5vh;
+
+    transition: 0.2s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: background-color 0.2s;
+    }
+
+    > svg {
+      width: 45px;
+      height: 45px;
+
+      margin: auto;
+
+      color: var(--elem_white);
+    }
+  }
+
+  > div:last-child {
+    position: absolute;
+
+    bottom: 20px;
   }
 `;
 
-export const HomeIcon = styled(Home)``;
+export const HomeIcon = styled(IconSolid.Home)``;
 
-export const AnaliticoIcon = styled(StatsChart)``;
+export const AnaliticoIcon = styled(IconOutline.StatsChart)``;
 
-export const HistoricoIcon = styled(Time)``;
+export const HistoricoIcon = styled(IconOutline.Time)``;
 
-export const ConfiguracoesIcon = styled(Settings)``;
+export const ConfiguracoesIcon = styled(IconOutline.Settings)``;
 
-export const LogoutIcon = styled(LogOut)`
-  position: absolute;
-
-  bottom: 0px;
-`;
+export const LogoutIcon = styled(IconOutline.LogOut)``;

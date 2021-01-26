@@ -16,12 +16,22 @@ const SideBar: React.FC = () => (
     <UserProfile />
 
     <Menu>
-      <HomeIcon />
-      <AnaliticoIcon />
-      <HistoricoIcon />
-      <ConfiguracoesIcon />
+      <div>
+        <HomeIcon />
+      </div>
+      <div>
+        <AnaliticoIcon />
+      </div>
+      <div>
+        <HistoricoIcon />
+      </div>
+      <div>
+        <ConfiguracoesIcon />
+      </div>
 
-      <LogoutIcon />
+      <div>
+        <LogoutIcon />
+      </div>
     </Menu>
   </Container>
 );

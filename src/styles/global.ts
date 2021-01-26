@@ -14,6 +14,10 @@ export default createGlobalStyle`
     height: 100vh;
   }
 
+  body {
+    background-color: var(--background-default)
+  }
+
   *, button, input {
     border: 0;
     outline: 0;
