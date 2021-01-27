@@ -1,12 +1,25 @@
 import React from 'react';
 
-import { Container, Search, Notification } from './style';
+import {
+  Container,
+  Search,
+  SearchIcon,
+  Notification,
+  NotificationIcon,
+} from './style';
 
 const NavBar: React.FC = () => (
   <Container>
-    <Search />
     <div>
-      <Notification />
+      <Search>
+        <SearchIcon />
+        <input type="text" placeholder="Pesquise por algo..." />
+      </Search>
+    </div>
+    <div>
+      <Notification>
+        <NotificationIcon />
+      </Notification>
     </div>
   </Container>
 );

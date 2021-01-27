@@ -56,6 +56,7 @@ export const Menu = styled.div`
       margin: auto;
 
       color: var(--elem_white);
+      cursor: pointer;
     }
   }
 
