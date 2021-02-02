@@ -16,6 +16,7 @@ export const ExpandIcon = styled(IconSolid.AddCircle)`
   color: var(--primary);
   cursor: pointer;
 `;
+<<<<<<< HEAD
 
 export const ModalOptions = styled.div`
   width: 65px;
@@ -43,3 +44,5 @@ export const AddClientIcon = styled(IconSolid.PersonAdd)`
 export const CartIcon = styled(IconSolid.Cart)`
   cursor: pointer;
 `;
+=======
+>>>>>>> 99da7f02465c3bc7ed0fda5768266d00e06d8ccc
