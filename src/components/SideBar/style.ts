@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ReactTooltip from 'react-tooltip';
 
 import * as IconOutline from '@styled-icons/ionicons-outline';
 import * as IconSolid from '@styled-icons/ionicons-sharp';
@@ -65,6 +66,10 @@ export const Menu = styled.div`
 
     bottom: 20px;
   }
+`;
+
+export const StyledReactTooltip = styled(ReactTooltip)`
+  border-radius: 6px !important;
 `;
 
 export const HomeIcon = styled(IconSolid.Home)``;
