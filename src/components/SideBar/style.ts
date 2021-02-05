@@ -70,6 +70,8 @@ export const Menu = styled.div`
 
 export const StyledReactTooltip = styled(ReactTooltip)`
   border-radius: 6px !important;
+
+  margin-left: 42px !important;
 `;
 
 export const HomeIcon = styled(IconSolid.Home)``;

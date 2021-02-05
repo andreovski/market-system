@@ -8,6 +8,8 @@ export const Container = styled.div`
 
   align-items: center;
   font-family: 'Poppins', sans-serif;
+
+  margin-top: 100px;
 `;
 export const SaleArea = styled.div`
   display: flex;

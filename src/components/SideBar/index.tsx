@@ -19,21 +19,36 @@ const SideBar: React.FC = () => (
     <Menu>
       <div>
         <HomeIcon data-tip data-for="hover-Home" />
-        <StyledReactTooltip id="hover-Home" effect="solid" place="right">
+        <StyledReactTooltip
+          id="hover-Home"
+          effect="solid"
+          place="right"
+          arrowColor="transparent"
+        >
           <span>Inicio</span>
         </StyledReactTooltip>
       </div>
 
       <div>
         <AnaliticoIcon data-tip data-for="hover-Analitico" />
-        <StyledReactTooltip id="hover-Analitico" effect="solid" place="right">
+        <StyledReactTooltip
+          id="hover-Analitico"
+          effect="solid"
+          place="right"
+          arrowColor="transparent"
+        >
           <span>Analítico</span>
         </StyledReactTooltip>
       </div>
 
       <div>
         <HistoricoIcon data-tip data-for="hover-Historico" />
-        <StyledReactTooltip id="hover-Historico" effect="solid" place="right">
+        <StyledReactTooltip
+          id="hover-Historico"
+          effect="solid"
+          place="right"
+          arrowColor="transparent"
+        >
           <span>Histórico</span>
         </StyledReactTooltip>
       </div>
@@ -44,6 +59,7 @@ const SideBar: React.FC = () => (
           id="hover-Configuracoes"
           effect="solid"
           place="right"
+          arrowColor="transparent"
         >
           <span>Configurações</span>
         </StyledReactTooltip>
@@ -51,7 +67,12 @@ const SideBar: React.FC = () => (
 
       <div>
         <LogoutIcon data-tip data-for="hover-Logout" />
-        <StyledReactTooltip id="hover-Logout" effect="solid" place="right">
+        <StyledReactTooltip
+          id="hover-Logout"
+          effect="solid"
+          place="right"
+          arrowColor="transparent"
+        >
           <span>Sair</span>
         </StyledReactTooltip>
       </div>
