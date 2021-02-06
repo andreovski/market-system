@@ -50,7 +50,15 @@ const Indices: React.FC = () => (
     </SaleArea>
 
     <IndicatorsArea>
-      <div />
+      <div>
+        <span>Indicadores</span>
+        <div>
+          <span>7 Dias</span>
+          <span>30d</span>
+          <span>90d</span>
+          <span>360d</span>
+        </div>
+      </div>
     </IndicatorsArea>
 
     <HistoryArea />

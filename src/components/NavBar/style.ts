@@ -15,6 +15,7 @@ export const Container = styled.div`
 
   > div:first-child {
     width: 90%;
+    margin-left: 10%;
     justify-content: center;
   }
 
