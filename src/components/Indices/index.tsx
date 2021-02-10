@@ -1,5 +1,7 @@
 import React from 'react';
 
+import BoxHistoric from '../BoxHistoric/Index';
+
 import {
   Container,
   SaleArea,
@@ -9,6 +11,7 @@ import {
   TotalRecebido,
   HistoryArea,
   EyeIcon,
+  SectionTitle,
 } from './style';
 
 const Indices: React.FC = () => (
@@ -61,7 +64,15 @@ const Indices: React.FC = () => (
       </div>
     </IndicatorsArea>
 
-    <HistoryArea />
+    <HistoryArea>
+      <div>
+        <SectionTitle>Últimos consumidores</SectionTitle>
+      </div>
+
+      <div>
+        <BoxHistoric tag="Alimentos" />
+      </div>
+    </HistoryArea>
   </Container>
 );
 

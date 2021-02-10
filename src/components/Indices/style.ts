@@ -10,14 +10,17 @@ export const Container = styled.div`
   font-family: 'Poppins', sans-serif;
 
   margin-top: 50px;
+
+  width: 1024px;
+
+  justify-self: center;
 `;
 export const SaleArea = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 
-  width: 1024px;
+  width: 100%;
   height: 180px;
 `;
 export const TotalGerado = styled.div`
@@ -153,10 +156,10 @@ export const TotalRecebido = styled.div`
   }
 `;
 export const IndicatorsArea = styled.div`
-  width: 1005px;
+  width: 100%;
   height: 294px;
 
-  margin-top: 25px;
+  margin: 25px 0;
 
   background-color: var(--elem_white);
 
@@ -164,7 +167,7 @@ export const IndicatorsArea = styled.div`
   box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.1);
 
   > div:first-child {
-    width: 1005px;
+    width: 100%;
     height: 59px;
 
     display: flex;
@@ -202,6 +205,8 @@ export const IndicatorsArea = styled.div`
         border-radius: 6px;
 
         background-color: var(--primary);
+
+        cursor: default;
       }
       > span {
         display: flex;
@@ -216,8 +221,35 @@ export const IndicatorsArea = styled.div`
         font-size: 0.9rem;
         font-weight: bold;
         color: var(--elem_white);
+
+        cursor: pointer;
       }
     }
   }
 `;
-export const HistoryArea = styled.div``;
+export const HistoryArea = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin: 23px 0 48px;
+
+  width: 100%;
+  justify-content: space-between;
+
+  > div:first-child {
+    display: flex;
+    flex-direction: row;
+
+    &:after {
+      content: '';
+      width: 650px;
+      height: 1.5px;
+
+      background-color: black;
+      align-self: center;
+    }
+  }
+`;
+export const SectionTitle = styled.h1`
+  flex-direction: row;
+`;

@@ -9,12 +9,12 @@ export const Grid = styled.div`
   display: grid;
 
   grid-template-columns: 116px auto;
-  grid-template-rows: 90px 705px auto;
+  grid-template-rows: 10vh 90vh;
 
   grid-template-areas:
     'SIDEBAR NAVBAR'
     'SIDEBAR INDICES'
-    'SIDEBAR HISTORICO';
+    'SIDEBAR INDICES';
 
   height: 100%;
 `;
