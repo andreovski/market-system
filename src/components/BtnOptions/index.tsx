@@ -1,33 +1,59 @@
 import React from 'react';
-import ReactTooltip from 'react-tooltip';
+import SpeedDial from '@material-ui/lab/SpeedDial';
+import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
+import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
+import { ThemeProvider } from '@material-ui/styles';
+import { AddClient, CartIcon, useStyles, theme } from './style';
 
-import {
-  Container,
-  Button,
-  ExpandIcon,
-  ModalOptions,
-  AddClientIcon,
-  CartIcon,
-} from './style';
+const styles = {
+  color: 'white',
+};
 
-const BtnOptions: React.FC = () => (
-  <Container>
-    <ModalOptions>
-      {/* tooltip hover */}
-      <AddClientIcon data-tip data-for="hover-addClient" />
-      <ReactTooltip id="hover-addClient" effect="solid" place="left">
-        <span>Novo cliente</span>
-      </ReactTooltip>
+const actions = [
+  { icon: <AddClient />, name: 'Novo cliente' },
+  { icon: <CartIcon />, name: 'Nova saída' },
+];
 
-      <ReactTooltip id="hover-Cart" effect="solid" place="left">
-        <span>Nova compra</span>
-      </ReactTooltip>
-      <CartIcon data-tip data-for="hover-Cart" />
-    </ModalOptions>
-    <Button>
-      <ExpandIcon />
-    </Button>
-  </Container>
-);
+export default function SpeedDialTooltipOpen(): any {
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const [hidden, setHidden] = React.useState(false);
 
-export default BtnOptions;
+  const handleVisibility = (): any => {
+    setHidden(prevHidden => !prevHidden);
+  };
+
+  const handleOpen = (): any => {
+    setOpen(true);
+  };
+
+  const handleClose = (): any => {
+    setOpen(false);
+  };
+
+  return (
+    <div className={classes.root}>
+      <ThemeProvider theme={theme}>
+        <SpeedDial
+          ariaLabel="SpeedDial tooltip example"
+          className={classes.speedDial}
+          hidden={hidden}
+          icon={<SpeedDialIcon style={styles} />}
+          onClose={handleClose}
+          onOpen={handleOpen}
+          open={open}
+        >
+          {actions.map(action => (
+            <SpeedDialAction
+              key={action.name}
+              icon={action.icon}
+              tooltipTitle={action.name}
+              tooltipOpen
+              onClick={handleClose}
+            />
+          ))}
+        </SpeedDial>
+      </ThemeProvider>
+    </div>
+  );
+}

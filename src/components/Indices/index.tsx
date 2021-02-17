@@ -70,7 +70,7 @@ const Indices: React.FC = () => (
       </div>
 
       <div>
-        <BoxHistoric tag="Alimentos" />
+        <BoxHistoric />
       </div>
     </HistoryArea>
   </Container>
