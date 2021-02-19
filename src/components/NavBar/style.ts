@@ -62,7 +62,8 @@ export const Notification = styled.div`
   width: 56px;
   height: 46px;
 
-  padding: 8px 13px;
+  display: flex;
+  justify-content: center;
 
   background-color: var(--background-default);
   border-radius: 6px;
@@ -80,4 +81,8 @@ export const NotificationIcon = styled(IconOutline.Notifications)`
   align-items: center;
 
   color: var(--dark_grey);
+
+  > button {
+    border-radius: 6px !important;
+  }
 `;

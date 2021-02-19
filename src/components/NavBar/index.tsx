@@ -1,12 +1,7 @@
 import React from 'react';
+import ModalNotification from '../ModalNotification';
 
-import {
-  Container,
-  Search,
-  SearchIcon,
-  Notification,
-  NotificationIcon,
-} from './style';
+import { Container, Search, SearchIcon, Notification } from './style';
 
 const NavBar: React.FC = () => (
   <Container>
@@ -18,7 +13,7 @@ const NavBar: React.FC = () => (
     </div>
     <div>
       <Notification>
-        <NotificationIcon />
+        <ModalNotification />
       </Notification>
     </div>
   </Container>
